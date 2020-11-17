@@ -14,6 +14,8 @@ struct ContentView: View {
     
     var body: some View {
        
+        NavigationView {
+        
         VStack{
             
         Text("Guessing Game")
@@ -28,6 +30,9 @@ struct ContentView: View {
             }
             
             Text("You Guessed \(theUserGuess).")
+        }
+        .navigationTitle("Guesssing Game")
+            
         }
     }
 }
